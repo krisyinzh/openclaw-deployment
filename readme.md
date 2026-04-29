@@ -30,7 +30,7 @@ version: '3.8'
 services:
   # 主程序
   openclaw:
-    image: openclaw/openclaw:latest
+    image: alpine/openclaw:latest
     container_name: openclaw_app
     restart: always
     ports:
