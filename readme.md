@@ -34,7 +34,7 @@ services:
     container_name: openclaw_app
     restart: always
     ports:
-      - "8080:80"  # 访问地址：http://服务器IP:8080
+      - "8080:18789"  # 访问地址：http://服务器IP:8080
     environment:
       - TZ=Asia/Shanghai
       - REDIS_HOST=redis
