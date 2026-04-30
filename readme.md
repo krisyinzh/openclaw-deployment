@@ -89,7 +89,10 @@ docker compose ps
 ---
 
 想要web访问，推荐使用ssh隧道，做本地端口转发，避免跨域问题和ssl验证
+
+```
 sed -i '/"allowedOrigins": \[/a \        "*",'  openclaw.json
+```
 
 ## 第五步：防火墙设置（关键）
 
