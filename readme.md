@@ -55,6 +55,14 @@ services:
       - ./redis_data:/data
 ```
 
+赋予目录权限
+由于 alpine 镜像通常以非 root 用户运行，建议提前手动创建目录并放开权限，防止容器启动时报错 Permission denied：
+
+```
+mkdir -p data redis_data
+chmod 777 data redis_data
+```
+
 ---
 
 ## 第三步：启动容器
